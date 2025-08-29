@@ -10,7 +10,7 @@ Ans:  **getElementById** return a single element with specific id.
 
 2. How do you **create and insert a new element into the DOM**?    
 Ans:In the DOM, a new element is first created using document.createElement("tagName").  
- For example, a **<div></div>** or **<p></p>** can be created. After that, we can add text or HTML content    
+ For example, a **div** or **p** can be created. After that, we can add text or HTML content    
 to the element using textContent or innerHTML. Similarly, we can assign an id or className  
  to the element for identification or styling purposes. Once the element is created, we can  
   insert it into the DOM using appendChild() to add it at the end of a parent element.   
@@ -18,7 +18,7 @@ to the element using textContent or innerHTML. Similarly, we can assign an id or
 3. What is **Event Bubbling** and how does it work?  
 Ans:**Event Bubbling** is a process in the dom where an event is triggered on a child element   
 first runs its handler,then **bubbles** up to its parent elements,triggering their handlers.    
-Let's assume a **<button>** inside a **<div>**,the click event first trigger on the button then on the div  
+Let's assume a **button** inside a **div**,the click event first trigger on the button then on the div  
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?  
 Ans:**Event Delegation** is basically a process to handle events efficiently.     

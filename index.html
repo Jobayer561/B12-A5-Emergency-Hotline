@@ -33,54 +33,45 @@
     />
   </head>
   <body class="font-[Inter]">
-    <header class="bg-white px-15 py-6 ">
-      <div class="flex justify-between items-center">
+   <header class="bg-white px-3 py-4 lg:px-15 lg:py-6">
+  <div class="flex flex-col lg:flex-row justify-between items-center gap-4">
         <div class="flex items-center gap-3">
-          <img class="w-[50px]" src="./assets/logo.png" alt="" />
-          <h1 class="font-extrabold text-2xl text-[#006747] leading-[1.2]">
-            Emergency<br />Service
-          </h1>
-        </div>
-        <div class="flex gap-5">
-          <div
-            class="flex items-center gap-2 font-black bg-[#41FF6B1A] rounded-[50px] px-10 text-xl py-3"
-          >
-            <span id="heart-count">0</span>
-            <img class="w-[30px]" src="./assets/heart.png" alt="" />
-          </div>
-          <div
-            class="flex items-center gap-2 font-black bg-[#41FF6B1A] rounded-[50px] px-10 text-xl py-3"
-          >
-            <span id="coin">100</span>
-            <img class="w-[24px]" src="./assets/coin.png" alt="" />
-          </div>
-          <div
-            class="flex items-center gap-2 text-white bg-[#00A63E] rounded-[50px] px-10 font-semibold py-3"
-          >
-            <span id="copy-count">0</span>
-            <p>Copy</p>
-          </div>
-        </div>
+      <img class="w-[40px] lg:w-[50px]" src="./assets/logo.png" alt="Logo" />
+      <h1 class="font-extrabold text-xl lg:text-2xl text-[#006747] leading-[1.2] text-center lg:text-left">
+        Emergency<br />Service
+      </h1>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 lg:gap-5">
+      <div class="flex items-center gap-2 font-black bg-[#41FF6B1A] rounded-[50px] px-5 lg:px-10 text-base lg:text-xl py-2 lg:py-3">
+        <span id="heart-count">0</span>
+        <img class="w-[24px] lg:w-[30px]" src="./assets/heart.png" alt="Heart" />
       </div>
-    </header>
-      <div
-        class="bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223] h-60 w-full flex flex-col items-center justify-center font-[Hind Madurai]"
-      >
-        <img class="w-[92px]" src="./assets/logo-dark.png" alt="" />
-        <h1 class="text-white text-[40px] font-bold">
-          Emergency Service Directory
-        </h1>
-        <p class="text-white text-[20px] font-semibold">
-          Government Emergency Services at Your Fingertip - A Project by
-          Government of the People's Republic of Bangladesh
-        </p>
+
+      <div class="flex items-center gap-2 font-black bg-[#41FF6B1A] rounded-[50px] px-5 lg:px-10 text-base lg:text-xl py-2 lg:py-3">
+        <span id="coin">100</span>
+        <img class="w-[20px] lg:w-[24px]" src="./assets/coin.png" alt="Coin" />
+      </div>
+      <div class="flex items-center gap-2 text-white bg-[#00A63E] rounded-[50px] px-5 lg:px-10 font-semibold text-base lg:text-xl py-2 lg:py-3">
+        <span id="copy-count">0</span>
+        <p>Copy</p>
       </div>
     </div>
+  </div>
+</header>
+     <div
+  class="bg-gradient-to-r from-[#013123] via-[#006747] to-[#013223] w-full flex flex-col items-center justify-center text-center px-4 py-10 font-[Hind Madurai]">
+  <img class="w-[60px] sm:w-[80px] lg:w-[92px]" src="./assets/logo-dark.png" alt="Logo" />
+  <h1 class="text-white text-2xl sm:text-3xl lg:text-[40px] font-bold mt-3">
+    Emergency Service Directory</h1>
+  <p class="text-white text-sm  lg:text-[20px] font-semibold  mt-2">
+    Government Emergency Services at Your Fingertip - A Project by
+    Government of the People's Republic of Bangladesh</p>
+</div>
     <main class="bg-[#41FF6B1A]">
       <section class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-5 font-[Roboto]">
-        <section id="card-box" class="col-span-9">
-          <div class="grid grid-cold-1 lg:grid-cols-3 gap-5">
-            <div class="card bg-base-100 shadow-md p-5">
+        <section id="card-box" class="col-span-12 lg:col-span-9">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+            <div class="card bg-base-100 shadow-md sm:m-5 lg:m-0 p-8  lg:p-5">
               <div class="flex justify-between items-center">
                 <div
                   class="bg-[#FFE3E2] w-[50px] h-[50px] rounded-[16px] flex justify-center items-center"
@@ -105,22 +96,22 @@
               >
                 <p class="text-[18px] font-[400]">All</p>
               </div>
-              <div class="flex gap-3 mt-6">
+              <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100 transition"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
                 </button>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-md p-5">
+            <div class="card bg-base-100 shadow-md sm:m-5 lg:m-0 p-8  lg:p-5">
               <div class="flex justify-between items-center">
                 <div
                   class="bg-[#DFEFFF] w-[50px] h-[50px] rounded-[16px] flex justify-center items-center"
@@ -150,23 +141,22 @@
                 <p class="text-[18px] font-[400]">Police</p>
               </div>
 
-              <div class="flex gap-3 mt-6">
+               <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
-
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
                 </button>
               </div>
             </div>
-            <div class="card bg-base-100 shadow-md p-5">
+            <div class="card bg-base-100 shadow-md sm:m-5 lg:m-0 p-8  lg:p-5">
               <div class="flex justify-between items-center">
                 <div
                   class="bg-[#FFE3E2] w-[50px] h-[50px] rounded-[16px] flex justify-center items-center"
@@ -186,16 +176,15 @@
                 <p class="text-[18px] font-[400]">Fire</p>
               </div>
 
-              <div class="flex gap-3 mt-6">
+               <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
-
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center text-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -203,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cold-1 lg:grid-cols-3 gap-5 mt-5">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
             <div class="card bg-base-100 shadow-md p-5">
               <div class="flex justify-between items-center">
                 <div
@@ -233,16 +222,15 @@
                 <p class="text-[18px] font-[400]">Health</p>
               </div>
 
-              <div class="flex gap-3 mt-6">
+              <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
-
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -279,16 +267,15 @@
                 <p class="text-[18px] font-[400]">Help</p>
               </div>
 
-              <div class="flex gap-3 mt-6">
+             <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
-
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -319,13 +306,15 @@
               <div class="bg-gray-100 w-fit px-5 py-2 text-[#5C5C5CFF] rounded-full">
                 <p class="text-[18px] font-[400]">Govt.</p>
               </div>
-              <div class="flex gap-3 mt-6">
+              <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100">
-                  <i class="fa-regular fa-copy"></i>Copy
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  Copy
                 </button>
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -355,15 +344,15 @@
                 class="bg-gray-100 w-fit px-5 py-2 text-[#5C5C5CFF] rounded-full">
                 <p class="text-[18px] font-[400]">Electricity</p>
               </div>
-              <div class="flex gap-3 mt-6">
+              <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -400,16 +389,15 @@
                 <p class="text-[18px] font-[400]">NGO</p>
               </div>
 
-              <div class="flex gap-3 mt-6">
+             <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
-
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -445,16 +433,15 @@
                 <p class="text-[18px] font-[400]">Travel</p>
               </div>
 
-              <div class="flex gap-3 mt-6">
+             <div class="flex gap-3 mt-6 w-full">
                 <button
-                  class="copy-btn flex items-center gap-2 w-[150px] border border-gray-400 px-8 py-2 rounded-md hover:bg-gray-100"
+                  class="copy-btn flex-1 flex justify-center items-center gap-2  border border-gray-400 px-4 py-2 rounded-md hover:bg-gray-100"
                 >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
-
                 <button
-                  class="call-btn flex items-center gap-2 w-[150px] bg-green-600 text-white px-8 py-2 rounded-md hover:bg-green-700"
+                  class="call-btn flex-1 flex justify-center items-center gap-2  bg-green-600 text-white px-4 py-2 rounded-md active:bg-green-700"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -463,7 +450,7 @@
             </div>
           </div>
         </section>
-         <div class="col-span-3 h-full">
+         <div class="col-span-12 lg:col-span-3  h-full">
           <div class="bg-white p-5 rounded-md shadow-md h-full">
             <div class="flex justify-between">
             <div class="flex items-center gap-2">

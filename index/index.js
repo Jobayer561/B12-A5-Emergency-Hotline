@@ -9,4 +9,14 @@ getElement("card-box").addEventListener("click", function (e) {
     currHeart++;
     totalHeart.innerText = currHeart;
   }
+  if (e.target.className.includes("copy-btn")) {
+    const copyButton = e.target;
+    const number = copyButton.parentNode.parentNode.children[3].innerText;
+    navigator.clipboard.writeText(number);
+    const totalCopy = getElement("copy-count");
+    let currCopy = Number(totalCopy.innerText);
+    currCopy++;
+    totalCopy.innerText = currCopy;
+    alert(`Number Copied: ${number}`);
+  }
 });

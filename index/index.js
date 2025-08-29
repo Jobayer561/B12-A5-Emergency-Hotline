@@ -9,6 +9,7 @@ getElement("card-box").addEventListener("click", function (e) {
     currHeart++;
     totalHeart.innerText = currHeart;
   }
+  
   if (e.target.className.includes("copy-btn")) {
     const copyButton = e.target;
     const number = copyButton.parentNode.parentNode.children[3].innerText;
@@ -36,7 +37,7 @@ getElement("card-box").addEventListener("click", function (e) {
 
     const show = document.createElement("div");
     show.innerHTML = `
-     <div class="bg-[#FAFAFA] rounded-xl flex justify-between items-center mt-3 p-4">
+     <div class="bg-[#FAFAFA]  rounded-xl flex justify-between items-center mt-3 p-4">
                   <div class="">
                     <h2 class="font-bold">${title}</h2>
                     <h2 class="">${num}</h2>
